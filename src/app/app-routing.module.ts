@@ -4,7 +4,7 @@ import {TablaComponent} from './components/tabla/tabla.component';
 
 const routes: Routes = [
   {path: 'tabla', component: TablaComponent},
-  {path: '**', redirectTo: '/AppComponent', pathMatch: 'full'}
+  {path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 
 @NgModule({

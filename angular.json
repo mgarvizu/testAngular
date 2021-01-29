@@ -69,7 +69,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "testAngular:build"
+            "browserTarget": "testAngular:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -97,8 +98,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "proxyConfig": "proxy.config.json"
+            "scripts": []
           }
         },
         "lint": {
