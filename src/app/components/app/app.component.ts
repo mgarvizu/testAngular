@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostBinding} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'testAngular';
+  skins = ['skin_1', 'skin_2', 'skin_3'];
+  skinSelected = '';
+
+  @HostBinding('class') ClassValue = '';
+
+  changeTheme(): void {
+
+    this.ClassValue = this.skinSelected
+  }
 }

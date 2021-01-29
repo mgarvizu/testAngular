@@ -1,3 +1,10 @@
 
-<app-tabla></app-tabla>
+<h2>pruebas</h2>
+escoge un tema:
+  <select [(ngModel)]="skinSelected" (change)="changeTheme()">
+    <option *ngFor="let skin of skins" [value]="skin">
+      {{skin}}
+    </option>
+  </select>
+<a [routerLink]="['/','tabla']">tabla</a>
 <router-outlet></router-outlet>
