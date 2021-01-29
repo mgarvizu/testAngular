@@ -24,4 +24,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
+## Json-Server
+Run `json-server --watch api/data-fake.js --routes api/routes.json` 
+to execute and the server take the file api/data-fake.js this file contains fake data iterations
+
+
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
