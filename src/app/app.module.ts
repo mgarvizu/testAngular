@@ -6,11 +6,13 @@ import { AppComponent } from './components/app/app.component';
 import { TablaComponent } from './components/tabla/tabla.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { HolasComponent } from './holas/holas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TablaComponent
+    TablaComponent,
+    HolasComponent
   ],
   imports: [
     BrowserModule,
